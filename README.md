@@ -35,7 +35,7 @@ npm install --save create-state
 
 ## Using With React
 
-The best way to use create-state state atoms with React is to use [useSubstate][https://github.com/philipp-spiess/use-substate]. You can find more information in the [README][https://github.com/philipp-spiess/use-substate/blob/master/README.md] of that library.
+The best way to use create-state state atoms with React is to use [useSubstate](https://github.com/philipp-spiess/use-substate). You can find more information in the [README](https://github.com/philipp-spiess/use-substate/blob/master/README.md) of that library.
 
 ## Contributing
 
