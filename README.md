@@ -34,6 +34,10 @@ console.log(store.getState().count); // => 1
 npm install --save create-state
 ```
 
+## Using With React
+
+The best way to use create-state state atoms with React is to use [useSubstate][https://github.com/philipp-spiess/use-substate]. You can find more information in the [README][https://github.com/philipp-spiess/use-substate/blob/master/README.md] of that library.
+
 ## Contributing
 
 Every help on this project is greatly appreciated. To get you started, here's a quick guide on how to make good and clean pull-requests:
