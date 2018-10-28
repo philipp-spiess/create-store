@@ -3,7 +3,7 @@
 Tiny ([<300B minified + gzipped](https://bundlephobia.com/result?p=create-state)) state atoms that are updated via reducers.
 
 ```js
-import createState from "create-state"
+import createState from "create-state";
 
 const initialState = { count: 0 };
 function reducer(state, action) {
@@ -16,10 +16,9 @@ function reducer(state, action) {
 }
 const store = createState(reducer, initialState);
 
-
 console.log(store.getState().count); // => 0
 
-store.dispatch({ type: "INCREMENT" })
+store.dispatch({ type: "INCREMENT" });
 
 console.log(store.getState().count); // => 1
 ```
