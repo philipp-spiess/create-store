@@ -1,6 +1,6 @@
 # 🍱 create-state
 
-Tiny ([<200B minified + gzipped](https://bundlephobia.com/result?p=create-state@0.0.1)) state atoms that are updated via reducers.
+Tiny ([<300B minified + gzipped](https://bundlephobia.com/result?p=create-state)) state atoms that are updated via reducers.
 
 ```js
 import createState from "create-state"
