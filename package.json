@@ -1,0 +1,23 @@
+{
+  "name": "create-state",
+  "version": "0.0.2",
+  "description": "Create state atoms that are updated via reducers",
+  "main": "dist/create-state.js",
+  "umd:main": "dist/create-state.umd.js",
+  "module": "dist/create-state.m.js",
+  "repository": "https://github.com/philipp-spiess/create-state",
+  "author": "Philipp Spiess",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle -o dist/ --name create-state --compress false --sourcemap false",
+    "prepublishOnly": "yarn build"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "microbundle": "^0.6.0"
+  }
+}
