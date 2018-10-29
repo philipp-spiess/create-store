@@ -1,9 +1,9 @@
-# 🍱 create-state
+# 🍱 create-store
 
-Tiny ([<300B minified + gzipped](https://bundlephobia.com/result?p=create-state)) state atoms that are updated via reducers.
+Tiny ([<300B minified + gzipped](https://bundlephobia.com/result?p=create-store)) state atoms that are updated via reducers.
 
 ```js
-import createState from "create-state";
+import createStore from "create-store";
 
 const initialState = { count: 0 };
 function reducer(state, action) {
@@ -14,7 +14,7 @@ function reducer(state, action) {
       return { count: state.count - 1 };
   }
 }
-const store = createState(reducer, initialState);
+const store = createStore(reducer, initialState);
 
 console.log(store.getState().count); // => 0
 
@@ -23,19 +23,19 @@ store.dispatch({ type: "INCREMENT" });
 console.log(store.getState().count); // => 1
 ```
 
-`create-state` is a lightweight implementation of a [Redux][] store without advanced concepts like middleware.
+`create-store` is a lightweight implementation of a [Redux][] store without advanced concepts like middleware.
 
-[![Edit create-state](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/7ylpxm0xn0)
+[![Edit create-store](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/7ylpxm0xn0)
 
 ## Installation
 
 ```bash
-npm install --save create-state
+npm install --save create-store
 ```
 
 ## Using With React
 
-The best way to use create-state state atoms with React is to use [useSubstate](https://github.com/philipp-spiess/use-substate). You can find more information in the [README](https://github.com/philipp-spiess/use-substate/blob/master/README.md) of that library.
+The best way to use create-store state atoms with React is to use [useSubstate](https://github.com/philipp-spiess/use-substate). You can find more information in the [README](https://github.com/philipp-spiess/use-substate/blob/master/README.md) of that library.
 
 ## Contributing
 
